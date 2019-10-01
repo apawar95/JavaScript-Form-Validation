@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html
+<head>
+<link rel= "stylesheet " href = "Deliverable4-HTML.css">
+<title> validation of customer information  </title>
+</head>
+<body> 
+<h1 align = "center " style= "color: white;"> <strong ><u> Customer Information </u></strong></h1>
+
+<h3 style = "color:grey;" > Please put in your Information: </h3> 
+
+<form id=form1 action ="" onsubmit= "return javavalidateform()" method="post">
+Enter your First Name:
+<input type ="text" name= "FirstName" required> 
+<br></br>
+</form>
+<form id=form1 action ="" onsubmit= " return javavalidateform()" method="post">
+Enter your Last Name:
+<input type ="text" name= "Lastname" required> 
+<br></br>
+</form>
+<form id=form1 action ="" onsubmit= " return javavalidateform()" method="post">
+Enter your Email:
+<input type ="text" name= "email" required> 
+<br></br>
+</form>
+
+
+<button type= "button" onclick= "javavalidateform">Submit</button> 
+<script>
+
+function javavalidateform (){
+var x = customer_information_GPF ["form1"]["FirstName"].value;
+var y = customer_information_GPF ["form1"]["LastName"].value; 
+var v = customer_information_GPF ["form1"]["email"].value; 
+
+if ( x== "" || y== "" || v== ""){
+alert( "please fill out your name.");
+return false;
+    }
+ }
+ </script>
+ </body>
+ </html>
+ 
+
+
+
+
+  
+   
